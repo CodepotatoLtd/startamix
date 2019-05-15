@@ -4,7 +4,7 @@ A laravel-mix powered Statamic theme framework
 
 This is a simple Statamic theme framework that uses Laravel Mix for asset compilation. 
 
-Features
+## Features
 
 ✅ SCSS / Bootstrap 4 compilation to CSS files
 
