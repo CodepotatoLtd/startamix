@@ -1,0 +1,31 @@
+<div class="banner-gradient"></div>
+
+<div class="container header-container">
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+            <img src="{{ theme:images src="filehaven-logo.svg" }}" alt="filehaven logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                {{ nav from="/" include_home="true" scope="tag" }}
+                <li
+                {{ if is_current or is_parent }}
+                class="nav-item active"
+                {{ else }}
+                class="nav-item"
+                {{ /if }}>
+                <a href="{{ url }}" class="nav-link">{{ tag:nav_title or title }}</a>
+                </li>
+                {{ /nav }}
+            </ul>
+            <a href="https://filehaven.app" class="btn is-gradient">Login / Register</a>
+        </div>
+    </nav>
+
+</div>

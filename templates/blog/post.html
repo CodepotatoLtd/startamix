@@ -1,0 +1,26 @@
+{{ partial:blog-header }}
+
+<section class="container">
+
+    <div class="blogs">
+
+        <section class="full-post">
+
+            <article class="content">
+
+                {{ content }}
+
+                <ul class="tags">
+                    {{ tags }}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+                    {{ /tags }}
+                </ul>
+            </article>
+
+        </section>
+
+        {{ partial:article-footer }}
+
+    </div>
+
+</section>

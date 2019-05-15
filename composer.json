@@ -1,0 +1,13 @@
+{
+    "name": "codepotatoltd/startamix",
+    "description": "A laravel-mix powered Statamic theme framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gareth Thompson",
+            "email": "gareth@codepotato.co.uk"
+        }
+    ],
+    "require": {}
+}

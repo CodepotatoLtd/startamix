@@ -1,0 +1,74 @@
+
+
+<footer class="site-footer">
+
+<div class="container">
+<div class="row">
+    <div class="col-sm-6">
+        {{ partial:title-divider }}
+
+        <img class="logo" src="{{ theme:images src="filehaven-logo.svg" }}" alt="filehaven logo">
+
+        <p>Brought to you by the Codepotato team.</p>
+
+        <h4>We're social, too</h4>
+
+        <div class="social">
+            <a href="https://twitter.com/myfilehaven" target="_blank">
+                <img src="{{ theme:images src="twitter.svg" }}" alt="twitter logo">
+            </a>
+        </div>
+
+    </div>
+<div class="col-sm-3">
+{{ partial:title-divider }}
+
+    <h4>Explore</h4>
+
+<ul class="footer-nav">
+{{ nav from="/" include_home="true" scope="tag" }}
+        <li
+        {{ if is_current or is_parent }}
+                class=" active"
+        {{ else }}
+        class=""
+        {{ /if }}>
+            <a href="{{ url }}" class="">{{ tag:nav_title or title }}</a>
+        </li>
+        {{ /nav }}
+
+        </ul>
+
+            <img class="post-box" src="{{ theme:images src="bird-bo.svg" }}" alt="bird box">
+
+        </div>
+            <div class="col-sm-3 tweets">
+                {{ partial:title-divider }}
+
+                <h4>Latest Tweets</h4>
+
+                <div class="twitter-wrap">
+                    {{ bluebird screen_name="myfilehaven" include_rts="false" count="2" }}
+                    {{ tweets }}
+                        <div class="tweet-block">
+                            <img class="tweet" src="{{ theme:images src="tweet.svg" }}" alt="twitter logo">
+                            <p>{{ text }}</p>
+                            <footer class="time">
+                                    <a href="{{ tweet_url }}">{{ created_at format="F jS, Y" }}</a>
+                            </footer>
+                        </div>
+                    {{ /tweets }}
+                    {{ /bluebird }}
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+
+</footer>
+
+<div class="regs text-center">
+    <p>CODEPOTATO LTD IS REGISTERED IN ENGLAND NO.7598732. OUR REGISTERED ADDRESS IS 108 SILVERDALE DRIVE, WATERLOOVILLE, HAMPSHIRE, PO7 6DX.
+        <br> WE'RE VAT REGISTERED TOO — GB 165611512.</p>
+</div>
