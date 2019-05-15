@@ -1,14 +1,20 @@
 # Startamix
+
 A laravel-mix powered Statamic theme framework
 
 This is a simple Statamic theme framework that uses Laravel Mix for asset compilation. 
 
 Features
-* SCSS / Bootstrap 4 compilation to CSS files
-* Webpack awesomeness
-* Laravel Mix's saucy magic
-* JS compiling / minification
-* Ready to develop on instantly
+
+✅ SCSS / Bootstrap 4 compilation to CSS files
+
+✅ Webpack awesomeness
+
+✅ Laravel Mix's saucy magic
+
+✅ JS compiling / minification
+
+✅ Ready to develop on instantly
 
 ## How to get started
 1. Download a fresh statamic site installation (or jump into an existing)
