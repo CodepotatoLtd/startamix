@@ -15,9 +15,11 @@ mix.
     options({
         processCssUrls: false,
     })
-    .js('resources/js/startamix.js', './js')
+    .js('resources/js/codepotato19.js', './js')
     .copyDirectory('resources/images', './images')
-    .sass('resources/sass/startamix.scss', './css');
+    .postCss('resources/sass/codepotato19.scss', './css', [
+        require('tailwindcss'),
+    ]);
 
 // Full API
 // mix.js(src, output);
